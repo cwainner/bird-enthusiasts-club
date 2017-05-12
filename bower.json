@@ -1,0 +1,17 @@
+{
+  "name": "bird-enthusiasts-club",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/cwainner/bird-enthusiasts-club",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.2"
+  }
+}
