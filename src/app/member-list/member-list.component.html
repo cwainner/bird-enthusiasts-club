@@ -1,10 +1,12 @@
-<h2 class="center">Current Members</h2>
+<div class="center">
+  <h2>Current Members</h2>
+  <h5>Click on a member to see their detail page</h5>
 
-<div class="row">
-  <div *ngFor="let member of members | async" class="col s6">
-    <h3>Name: {{member.name}}</h3>
-    <h5>Description: {{member.description}}</h5>
-    <h6>Favorite bird: {{member.favoriteBird}}</h6>
-    <h6>Last bird sighting: {{member.recentBirdSighting}}</h6>
+  <div class="row">
+    <div *ngFor="let member of members | async" (click)="goToDetailPage(member)" class="col s4 card">
+      <h3>Name: {{member.name}}</h3>
+      <h6>Favorite bird: {{member.favoriteBird}}</h6>
+      <h6>Last bird sighting: {{member.recentBirdSighting}}</h6>
+    </div>
   </div>
 </div>

@@ -13,4 +13,8 @@ export class MemberService {
   getMembers(){
     return this.members;
   }
+
+  getMemberById(memberId){
+    return this.database.object('members/' + memberId);
+  }
 }
