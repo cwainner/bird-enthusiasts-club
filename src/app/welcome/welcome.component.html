@@ -2,4 +2,10 @@
   <h2>Welcome to the Bird Enthusiasts!</h2>
   <h4>We're a group of avid bird watchers who have come together to share our love of birds!</h4>
   <p>Click on the member link above to see our current members, or click on about to get more information about the group.</p>
+  <h4>Recent Bird Sightings</h4>
+  <div class="row">
+    <div *ngFor="let member of members | async" class="medium-12 columns card">
+      <h5>{{member.recentBirdSighting}}</h5>
+    </div>
+  </div>
 </div>
