@@ -22,7 +22,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation
 
+Please note that a firebase database with apikey is required for this project. To get a database and key, go to `https://firebase.google.com` and sign up. The key information should be put into `*base folder*/src/app/api-keys.ts` in the format:
+
+**export var masterFirebaseConfig = {  
+    apiKey: "xxxx",  
+    authDomain: "xxxx.firebaseapp.com",  
+    databaseURL: "https://xxxx.firebaseio.com",  
+    storageBucket: "xxxx.appspot.com",  
+    messagingSenderId: "xxxx"  
+  };**
+
+
 Clone the repository using `git clone: https://github.com/cwainner/bird-enthusiasts-club`
+
+Run `npm install`
 
 Run `bower install`
 
