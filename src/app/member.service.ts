@@ -21,4 +21,15 @@ export class MemberService {
   addMember(member){
     this.members.push(member);
   }
+
+  updateMember(updatedMember){
+    var memberInFirebase = this.getMemberById(updatedMember.$key);
+    memberInFirebase.update({
+      name:updatedMember.name,
+      description: updatedMember.description,
+      favoriteBird: updatedMember.favoriteBird,
+      recentBirdSighting: updatedMember.recentBirdSighting,
+      role: updatedMember.role
+    });
+  }
 }

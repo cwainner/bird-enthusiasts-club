@@ -12,9 +12,11 @@
   </div>
 
   <div class="row">
-    <div *ngFor="let member of members | async | role:filterByRole" (click)="goToDetailPage(member)" class="medium-4 columns card">
-      <h3>{{member.name}}</h3>
-      <h5>Role : {{member.role}}</h5>
+    <div *ngFor="let member of members | async | role:filterByRole" (click)="goToDetailPage(member)">
+      <div class="medium-4 columns card">
+        <h3>{{member.name}}</h3>
+        <h5>{{member.role}}</h5>
+      </div>
     </div>
   </div>
 </div>

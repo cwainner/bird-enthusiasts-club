@@ -1,4 +1,9 @@
-<h2 class="center">{{(memberToDisplay | async)?.name}}</h2>
-<h5>Favorite Bird: {{(memberToDisplay | async)?.favoriteBird}}</h5>
-<h5>Last Bird Sighted: {{(memberToDisplay | async)?.recentBirdSighting}}</h5>
-<p>Description: {{(memberToDisplay | async)?.description}}</p>
+<div class="center">
+  <h2>{{(memberToDisplay | async)?.name}}</h2>
+  <h5>Favorite Bird: {{(memberToDisplay | async)?.favoriteBird}}</h5>
+  <h5>Last Bird Sighted: {{(memberToDisplay | async)?.recentBirdSighting}}</h5>
+  <p>Description: {{(memberToDisplay | async)?.description}}</p>
+  <p>Role: {{(memberToDisplay | async)?.role}}</p>
+
+  <app-edit-member [selectedMember]="memberToDisplay | async"></app-edit-member>
+</div>

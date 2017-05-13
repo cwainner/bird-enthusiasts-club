@@ -1,29 +1,29 @@
-<div *ngIf="showNewMemberForm; else elseTemplate">
+<div *ngIf="showMemberForm; else elseTemplate">
   <div class="row medium-3 columns">
     <div class="form-group">
       <label>Name:</label>
-      <input #newName>
+      <input [(ngModel)]="selectedMember.name">
     </div><br>
     <div class="form-group">
       <label>Description:</label>
-      <textarea rows="5" cols="50" #newDescription></textarea>
+      <textarea rows="5" cols="50" [(ngModel)]="selectedMember.description"></textarea>
     </div><br>
     <div class="form-group">
       <label>Favorite Bird:</label>
-      <input #newFavoriteBird>
+      <input [(ngModel)]="selectedMember.favoriteBird">
     </div><br>
     <div class="form-group">
       <label>Last Bird Sighting:</label>
-      <input #newRecentBirdSighting>
+      <input [(ngModel)]="selectedMember.recentBirdSighting">
     </div><br>
     <div class="form-group">
       <label>Role:</label>
-      <input #newRole>
+      <input [(ngModel)]="selectedMember.role">
     </div><br>
-    <button (click)="submitNewMember(newName.value, newDescription.value, newFavoriteBird.value, newRecentBirdSighting.value, newRole.value)" class="button">Submit</button>
+    <button (click)="updateMember(selectedMember)" class="button">Submit</button>
     <button (click)="cancel()" class="alert button">Cancel</button>
   </div>
 </div>
 <ng-template #elseTemplate>
-  <button (click)="showNewMember()" class="button">Add new member</button>
+  <button (click)="showEditMember()" class="button">Edit member</button>
 </ng-template>
