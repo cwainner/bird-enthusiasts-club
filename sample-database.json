@@ -4,19 +4,22 @@
       "name": "Joe",
       "description": "An avid bird-watcher",
       "favoriteBird": "Golden Eagle",
-      "recentBirdSighting": "House Finch"
+      "recentBirdSighting": "House Finch",
+      "role": "veteran"
     },
     {
       "name": "Amy",
       "description": "A novice bird-watcher",
       "favoriteBird": "Robin",
-      "recentBirdSighting": "Northern Cardinal"
+      "recentBirdSighting": "Northern Cardinal",
+      "role": "novice"
     },
     {
       "name": "Bobby",
       "description": "A bird fan",
       "favoriteBird": "Bald Eagle",
-      "recentBirdSighting": "Common Sparrow"
+      "recentBirdSighting": "Common Sparrow",
+      "role": "fan"
     }
   ]
 }

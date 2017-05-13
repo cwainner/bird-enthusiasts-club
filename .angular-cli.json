@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../bower_components/materialize/dist/css/materialize.min.css"
+        "../bower_components/foundation-sites/dist/css/foundation.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

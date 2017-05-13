@@ -1,10 +1,16 @@
 <div class="center">
   <h2>Current Members</h2>
   <h5>Click on a member to see their detail page</h5>
+    <select>
+      <option value="veteran">Veteran</option>
+      <option value="novice">Novice</option>
+      <option value="fan">Fan</option>
+    </select>
 
   <div class="row">
-    <div *ngFor="let member of members | async" (click)="goToDetailPage(member)" class="col s4 card">
-      <h3>Name: {{member.name}}</h3>
+    <div *ngFor="let member of members | async" (click)="goToDetailPage(member)" class="medium-4 columns card">
+      <h3>{{member.name}}</h3>
+      <h5>Role : {{member.role}}</h5>
     </div>
   </div>
 </div>

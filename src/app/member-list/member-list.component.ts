@@ -3,6 +3,7 @@ import { MemberService } from "../member.service";
 import { Router } from "@angular/router";
 import { FirebaseListObservable } from "angularfire2/database";
 import { Member } from "../member.model";
+import {  } from "jquery";
 
 @Component({
   selector: 'app-member-list',
