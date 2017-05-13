@@ -17,4 +17,8 @@ export class MemberService {
   getMemberById(memberId){
     return this.database.object('members/' + memberId);
   }
+
+  addMember(member){
+    this.members.push(member);
+  }
 }

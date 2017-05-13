@@ -1,0 +1,29 @@
+<div *ngIf="showNewMemberForm; else elseTemplate">
+  <div class="row medium-12 columns">
+    <div class="form-group">
+      <label>Name:</label>
+      <input #newName>
+    </div><br>
+    <div class="form-group">
+      <label>Description:</label>
+      <textarea rows="5" cols="50" #newDescription></textarea>
+    </div><br>
+    <div class="form-group">
+      <label>Favorite Bird:</label>
+      <input #newFavoriteBird>
+    </div><br>
+    <div class="form-group">
+      <label>Last Bird Sighting:</label>
+      <input #newRecentBirdSighting>
+    </div><br>
+    <div class="form-group">
+      <label>Role:</label>
+      <input #newRole>
+    </div><br>
+    <button (click)="submitNewMember(newName.value, newDescription.value, newFavoriteBird.value, newRecentBirdSighting.value, newRole.value)" class="button">Submit</button>
+    <button (click)="cancel()" class="alert button">Cancel</button>
+  </div>
+</div>
+<ng-template #elseTemplate>
+  <button (click)="showNewMember()" class="button">Add new member</button>
+</ng-template>
