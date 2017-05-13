@@ -1,14 +1,17 @@
 <div class="center">
   <h2>Current Members</h2>
   <h5>Click on a member to see their detail page</h5>
-    <select>
+  <div class="row medium-3 columns">
+    <select (change)="onChange($event.target.value)">
+      <option value="all">All</option>
       <option value="veteran">Veteran</option>
       <option value="novice">Novice</option>
       <option value="fan">Fan</option>
     </select>
+  </div>
 
   <div class="row">
-    <div *ngFor="let member of members | async" (click)="goToDetailPage(member)" class="medium-4 columns card">
+    <div *ngFor="let member of members | async | role:filterByRole" (click)="goToDetailPage(member)" class="medium-4 columns card">
       <h3>{{member.name}}</h3>
       <h5>Role : {{member.role}}</h5>
     </div>

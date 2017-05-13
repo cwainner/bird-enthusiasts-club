@@ -3,7 +3,7 @@ import { MemberService } from "../member.service";
 import { Router } from "@angular/router";
 import { FirebaseListObservable } from "angularfire2/database";
 import { Member } from "../member.model";
-import {  } from "jquery";
+import { RolePipe } from "../role.pipe";
 
 @Component({
   selector: 'app-member-list',
@@ -13,6 +13,7 @@ import {  } from "jquery";
 })
 export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
+  filterByRole = "all";
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -22,5 +23,9 @@ export class MemberListComponent implements OnInit {
 
   goToDetailPage(clickedMember){
     this.router.navigate(['members', clickedMember.$key]);
+  }
+
+  onChange(optionForMenu){
+    this.filterByRole = optionForMenu;
   }
 }
