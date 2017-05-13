@@ -4,6 +4,7 @@ export class Member {
     public description: string,
     public favoriteBird: string,
     public recentBirdSighting: string,
-    public role: string
+    public role: string,
+    public image: string
   ){}
 }

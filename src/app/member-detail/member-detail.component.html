@@ -1,4 +1,5 @@
 <div class="center">
+  <img src="{{(memberToDisplay |async)?.image}}" alt="Favorite Bird" style="width: 30%">
   <h2>{{(memberToDisplay | async)?.name}}</h2>
   <h5>Favorite Bird: {{(memberToDisplay | async)?.favoriteBird}}</h5>
   <h5>Last Bird Sighted: {{(memberToDisplay | async)?.recentBirdSighting}}</h5>

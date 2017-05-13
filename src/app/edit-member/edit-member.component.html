@@ -18,7 +18,16 @@
     </div><br>
     <div class="form-group">
       <label>Role:</label>
-      <input [(ngModel)]="selectedMember.role">
+      <!--<input [(ngModel)]="selectedMember.role">-->
+      <select name="singleSelect" [(ngModel)]="selectedMember.role">
+        <option value="fan">fan</option>
+        <option value="veteran">veteran</option>
+        <option value="novice">novice</option>
+      </select>
+    </div><br>
+    <div class="form-group">
+      <label>Image:</label>
+      <input [(ngModel)]="selectedMember.image">
     </div><br>
     <button (click)="updateMember(selectedMember)" class="button">Submit</button>
     <button (click)="cancel()" class="alert button">Cancel</button>

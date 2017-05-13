@@ -18,9 +18,17 @@
     </div><br>
     <div class="form-group">
       <label>Role:</label>
-      <input #newRole>
+      <select #newRole>
+        <option value="fan">fan</option>
+        <option value="veteran">veteran</option>
+        <option value="novice">novice</option>
+      </select>
     </div><br>
-    <button (click)="submitNewMember(newName.value, newDescription.value, newFavoriteBird.value, newRecentBirdSighting.value, newRole.value)" class="button">Submit</button>
+    <div class="form-group">
+      <label>Image:</label>
+      <input #newImage>
+    </div><br>
+    <button (click)="submitNewMember(newName.value, newDescription.value, newFavoriteBird.value, newRecentBirdSighting.value, newRole.value, newImage.value)" class="button">Submit</button>
     <button (click)="cancel()" class="alert button">Cancel</button>
   </div>
 </div>

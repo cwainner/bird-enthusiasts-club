@@ -5,21 +5,24 @@
       "description": "An avid bird-watcher",
       "favoriteBird": "Golden Eagle",
       "recentBirdSighting": "House Finch",
-      "role": "veteran"
+      "role": "veteran",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Carpodacus_mexicanus_-Madison%2C_Wisconsin%2C_USA-8.jpg/1280px-Carpodacus_mexicanus_-Madison%2C_Wisconsin%2C_USA-8.jpg"
     },
     {
       "name": "Amy",
       "description": "A novice bird-watcher",
       "favoriteBird": "Robin",
       "recentBirdSighting": "Northern Cardinal",
-      "role": "novice"
+      "role": "novice",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Cardinalis_cardinalis_-Columbus%2C_Ohio%2C_USA-male-8_%281%29.jpg/220px-Cardinalis_cardinalis_-Columbus%2C_Ohio%2C_USA-male-8_%281%29.jpg"
     },
     {
       "name": "Bobby",
       "description": "A bird fan",
       "favoriteBird": "Bald Eagle",
-      "recentBirdSighting": "Common Sparrow",
-      "role": "fan"
+      "recentBirdSighting": "House Sparrow",
+      "role": "fan",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Passer_domesticus_male_%2815%29.jpg"
     }
   ]
 }

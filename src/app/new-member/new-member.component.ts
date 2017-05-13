@@ -24,8 +24,8 @@ export class NewMemberComponent implements OnInit {
     this.showNewMemberForm = false;
   }
 
-  submitNewMember(newName, newDescription, newFavoriteBird, newRecentBirdSighting, newRole){
-    var newMember = new Member(newName, newDescription, newFavoriteBird, newRecentBirdSighting, newRole);
+  submitNewMember(newName, newDescription, newFavoriteBird, newRecentBirdSighting, newRole, newImage){
+    var newMember = new Member(newName, newDescription, newFavoriteBird, newRecentBirdSighting, newRole, newImage);
     this.memberService.addMember(newMember);
     this.showNewMemberForm = false;
   }

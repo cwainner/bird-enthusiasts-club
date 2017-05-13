@@ -22,15 +22,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation
 
-Please note that a firebase database with apikey is required for this project. To get a database and key, go to `https://firebase.google.com` and sign up. The key information should be put into `*base folder*/src/app/api-keys.ts` in the format:
+Please note that a firebase database with apikey is required for this project. To get a database and key, go to **[firebase.google.com](https://firebase.google.com)** and sign up. The key information should be put into `*base folder*/src/app/api-keys.ts` in the format:
 
-**export var masterFirebaseConfig = {  
-    apiKey: "xxxx",  
-    authDomain: "xxxx.firebaseapp.com",  
-    databaseURL: "https://xxxx.firebaseio.com",  
-    storageBucket: "xxxx.appspot.com",  
-    messagingSenderId: "xxxx"  
-  };**
+<pre><code>export var masterFirebaseConfig = {  
+  apiKey: "xxxx",  
+  authDomain: "xxxx.firebaseapp.com",  
+  databaseURL: "https://xxxx.firebaseio.com",  
+  storageBucket: "xxxx.appspot.com",  
+  messagingSenderId: "xxxx"  
+};</code></pre>
 
 
 Clone the repository using `git clone: https://github.com/cwainner/bird-enthusiasts-club`
@@ -70,4 +70,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Licensed under the **MIT License**
 
-Copyright (c) 2017 by *_Chris Wainner_*
+Copyright &copy; 2017 by *_Chris Wainner_*
