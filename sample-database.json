@@ -8,9 +8,15 @@
     },
     {
       "name": "Amy",
-      "description": "An novice bird-watcher",
+      "description": "A novice bird-watcher",
       "favoriteBird": "Robin",
       "recentBirdSighting": "Northern Cardinal"
+    },
+    {
+      "name": "Bobby",
+      "description": "A bird fan",
+      "favoriteBird": "Bald Eagle",
+      "recentBirdSighting": "Common Sparrow"
     }
   ]
 }
