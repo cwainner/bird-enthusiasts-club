@@ -32,4 +32,9 @@ export class MemberService {
       role: updatedMember.role
     });
   }
+
+  deleteMember(memberToDelete){
+    var memberEntryInFirebase = this.getMemberById(memberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 }

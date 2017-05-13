@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from "@angular/router";
 import { MemberService } from "../member.service";
 
 @Component({
@@ -11,7 +12,7 @@ export class EditMemberComponent implements OnInit {
   members;
   showMemberForm = false;
 
-  constructor(private memberService: MemberService) { }
+  constructor(private router: Router, private memberService: MemberService) { }
 
   ngOnInit() {
     this.members = this.memberService.getMembers();
@@ -28,5 +29,12 @@ export class EditMemberComponent implements OnInit {
   updateMember(memberToUpdate){
     this.memberService.updateMember(memberToUpdate);
     this.showMemberForm = false;
+  }
+
+  deleteMember(memberToDelete){
+    if(confirm("Are you sure you want to delete this member?")){
+      this.memberService.deleteMember(memberToDelete);
+      this.router.navigate(['members']);
+    }
   }
 }
