@@ -1,0 +1,16 @@
+{
+  "members": [
+    {
+      "name": "Joe",
+      "description": "An avid bird-watcher",
+      "favoriteBird": "Golden Eagle",
+      "recentBirdSighting": "House Finch"
+    },
+    {
+      "name": "Amy",
+      "description": "An novice bird-watcher",
+      "favoriteBird": "Robin",
+      "recentBirdSighting": "Northern Cardinal"
+    }
+  ]
+}

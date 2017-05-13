@@ -1,5 +1,10 @@
 <h2 class="center">Current Members</h2>
 
 <div class="row">
-  
+  <div *ngFor="let member of members | async" class="col s6">
+    <h3>Name: {{member.name}}</h3>
+    <h5>Description: {{member.description}}</h5>
+    <h6>Favorite bird: {{member.favoriteBird}}</h6>
+    <h6>Last bird sighting: {{member.recentBirdSighting}}</h6>
+  </div>
 </div>
